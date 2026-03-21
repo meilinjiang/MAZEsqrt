@@ -69,7 +69,7 @@ eta.tr <- 1
 theta <- c(betas.tr, delta.tr, alphas.tr,
            xi0.tr, psi_km1.tr, gammas.tr, eta.tr)
 out <- DataGen(distM = 'zinbm', theta, K = 2, num_Z=0,
-               n = 200, B = 20, x1 = 0, x2 = 1, zval = NULL, mval = 0)
+               n = 200, B = 20, x1 = 0, x2 = 1, zval = NULL, mval = 0, true_gen=TRUE)
 (true_eff <- out$true_eff)
 dat <- out$dat
 }

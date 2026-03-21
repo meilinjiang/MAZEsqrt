@@ -25,5 +25,11 @@ Suggests:
     rmarkdown
 VignetteBuilder: knitr
 Imports: 
-    stats, foreach, doParallel, MASS
+    stats,
+    foreach,
+    doParallel,
+    MASS,
+    Rcpp
 LazyData: true
+LinkingTo: 
+    Rcpp

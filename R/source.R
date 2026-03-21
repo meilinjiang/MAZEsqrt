@@ -313,9 +313,9 @@ realanalysis <- function(dat, distM_sequence, K_sequence, selection, XMint, x1, 
     # t0 <- Sys.time()
     cl <- parallel::makeCluster(ncore, outfile = "")
     fun <- c("analysis", "bounds", "compare_mu", "ComputeInit", "ComputeInit2", "gammas_init",
-        "euclidean_dist", "expit", "k_to_ik", "logbinom", "loghik_zinbm",
-         "negQ", "negQ_G1", "negQ_G2", "negQ2_G1", "trans")
-    parallel::clusterExport(cl = cl, varlist = c(fun), envir = parent.env(environment()))
+             "euclidean_dist", "expit", "k_to_ik", "loghicpp_all", "logbinom", "loghik_zinbm",
+             "loghik_zipm", "negQ", "negQ_G1", "negQ_G2", "negQ2_G1", "trans")
+    parallel::clusterExport(cl = cl, varlist = c("nodes", "weights", fun), envir = parent.env(environment()))
     doParallel::registerDoParallel(cl)
     parallel::clusterSetRNGStream(cl = cl, seed)
     i <- numeric()

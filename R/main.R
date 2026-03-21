@@ -44,7 +44,7 @@
 ##' data(zinb10)
 ##' \donttest{
 ##' maze_out <- MAZE(data = zinb10,
-##'                  distM = c('zinbm'),  K = 1,
+##'                  distM = c('zilonm', 'zinbm', 'zipm'),  K = 1,
 ##'                  selection = 'AIC',
 ##'                  X = 'X', M = 'Mobs', Y = 'Y', Z = NULL,
 ##'                  XMint = c(TRUE, FALSE),
