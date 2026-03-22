@@ -2,6 +2,6 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 loghicpp_all <- function(X_group2, Y_group2, mu, sig, Ypart, beta1, beta5, delta, eta, nodes, weights, C) {
-    .Call('_MAZEsqrt_loghicpp_all', PACKAGE = 'MAZEsqrt', X_group2, Y_group2, mu, sig, Ypart, beta1, beta5, delta, eta, nodes, weights, C)
+    .Call(`_MAZEsqrt_loghicpp_all`, X_group2, Y_group2, mu, sig, Ypart, beta1, beta5, delta, eta, nodes, weights, C)
 }
 
